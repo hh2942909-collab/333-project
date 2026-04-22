@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title -->
+    <title>Week Details</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JS -->
+    <script src="details.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1 id="week-title"></h1>
+    </header>
+
+    <main>
+
+        <!-- ================= WEEK INFO ================= -->
+        <article>
+
+            <!-- Start date -->
+            <p id="week-start-date"></p>
+
+            <!-- Description -->
+            <h2>Description & Notes</h2>
+            <p id="week-description"></p>
+
+            <!-- Links -->
+            <h2>Exercises & Resources</h2>
+            <ul id="week-links-list"></ul>
+
+        </article>
+
+
+        <!-- ================= DISCUSSION ================= -->
+        <section id="discussion-forum">
+
+            <h2>Discussion</h2>
+
+            <!-- Comments list -->
+            <div id="comment-list">
+                <!-- Injected by details.js -->
+            </div>
+
+            <!-- Add comment form -->
+            <form id="comment-form">
+
+                <fieldset>
+
+                    <legend>Leave a Comment</legend>
+
+                    <!-- Comment input -->
+                    <label for="new-comment">Comment</label>
+                    <textarea
+                        id="new-comment"
+                        required
+                    ></textarea>
+
+                    <!-- Submit -->
+                    <button type="submit">
+                        Post Comment
+                    </button>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

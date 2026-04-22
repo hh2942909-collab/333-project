@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta charset -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title -->
+    <title>Manage Weekly Breakdown</title>
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Admin JS -->
+    <script src="admin.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Manage Weekly Breakdown</h1>
+    </header>
+
+    <main>
+
+        <!-- ================= FORM SECTION ================= -->
+        <section>
+
+            <h2>Add a New Week</h2>
+
+            <form id="week-form">
+
+                <fieldset>
+
+                    <legend>Weekly Details</legend>
+
+                    <!-- Week Title -->
+                    <label for="week-title">Week Title</label>
+                    <input 
+                        id="week-title"
+                        type="text"
+                        placeholder="Week 1: Introduction to HTML"
+                        required
+                    >
+
+                    <!-- Start Date -->
+                    <label for="week-start-date">Start Date</label>
+                    <input 
+                        id="week-start-date"
+                        type="date"
+                        required
+                    >
+
+                    <!-- Description -->
+                    <label for="week-description">Description</label>
+                    <textarea 
+                        id="week-description"
+                        rows="5"
+                    ></textarea>
+
+                    <!-- Links -->
+                    <label for="week-links">Resource Links (one per line)</label>
+                    <textarea 
+                        id="week-links"
+                        rows="3"
+                    ></textarea>
+
+                    <!-- Submit Button -->
+                    <button id="add-week" type="submit">
+                        Add Week
+                    </button>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+
+        <!-- ================= TABLE SECTION ================= -->
+        <section>
+
+            <h2>Current Weekly Breakdown</h2>
+
+            <table id="weeks-table">
+
+                <thead>
+                    <tr>
+                        <th>Week Title</th>
+                        <th>Start Date</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="weeks-tbody">
+                    <!-- Rows will be injected by admin.js -->
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
